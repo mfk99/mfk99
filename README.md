@@ -1,8 +1,5 @@
 ## Matti Kähkönen
 
-
-
-
 <table >
   <tr>
     <td align="left" valign="top">
@@ -15,13 +12,11 @@
 
 ---
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mfk99&layout=compact&theme=dark)](https://github.com/mfk99#gh-dark-mode-only)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mfk99&layout=compact&theme=default)](https://github.com/mfk99#gh-light-mode-only)
+[![Top Langs](./profile/dark_top_langs.svg)](https://github.com/mfk99#gh-dark-mode-only)
+[![Top Langs](./profile/light_top_langs.svg)](https://github.com/mfk99#gh-light-mode-only)
 
   </td>
   </tr>
-
-
 
 </table>
 
