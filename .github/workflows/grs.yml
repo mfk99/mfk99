@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.README_PAT }}
 
       - name: Generate dark top langs card
         uses: readme-tools/github-readme-stats-action@v1
@@ -17,7 +19,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&langs_count=6&theme=dark
           path: profile/dark_top_langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.README_PAT }}
 
       - name: Generate light top langs card
         uses: readme-tools/github-readme-stats-action@v1
@@ -25,7 +27,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&langs_count=6&theme=default
           path: profile/light_top_langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.README_PAT }}
 
       - name: Commit cards
         run: |
