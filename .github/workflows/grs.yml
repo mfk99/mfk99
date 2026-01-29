@@ -13,22 +13,6 @@ jobs:
         with:
           token: ${{ secrets.README_PAT }}
 
-      - name: Generate dark stats card
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=dark&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&include_all_commits=true&count_private=true
-          path: profile/dark_stats.svg
-          token: ${{ secrets.README_PAT }}
-
-      - name: Generate light stats card
-        uses: readme-tools/github-readme-stats-action@v1
-        with:
-          card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=default&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&include_all_commits=true&count_private=true
-          path: profile/light_stats.svg
-          token: ${{ secrets.README_PAT }}
-
       - name: Generate dark top langs card
         uses: readme-tools/github-readme-stats-action@v1
         with:
