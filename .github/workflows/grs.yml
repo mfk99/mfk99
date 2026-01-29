@@ -13,6 +13,22 @@ jobs:
         with:
           token: ${{ secrets.README_PAT }}
 
+      - name: Generate dark stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=default&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&include_all_commits=true&count_private=true
+          path: profile/dark_stats.svg
+          token: ${{ secrets.README_PAT }}
+
+      - name: Generate light stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=default&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&include_all_commits=true&count_private=true
+          path: profile/light_stats.svg
+          token: ${{ secrets.README_PAT }}
+
       - name: Generate dark top langs card
         uses: readme-tools/github-readme-stats-action@v1
         with:
@@ -27,6 +43,21 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&langs_count=6&theme=default
           path: profile/light_top_langs.svg
+          token: ${{ secrets.README_PAT }}
+
+      - name: Generate pin card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=readme-tools&repo=github-readme-stats
+          path: profile/pin-readme-tools-github-readme-stats.svg
+          token: ${{ secrets.README_PAT }}
+
+      - name: Generate gist
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: gist
+          options: id=0123456789abcdef
           token: ${{ secrets.README_PAT }}
 
       - name: Commit cards

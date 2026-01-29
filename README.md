@@ -7,8 +7,8 @@
     </td>
     <td align="center">
       
-[![My GitHub Stats](https://github-readme-stats-one-bice.vercel.app/api?username=mfk99&show_icons=true&theme=dark&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&include_all_commits=true&count_private=true)](https://github.com/mfk99#gh-dark-mode-only)
-[![My GitHub Stats](https://github-readme-stats-one-bice.vercel.app/api?username=mfk99&show_icons=true&theme=default&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&include_all_commits=true&count_private=true)](https://github.com/mfk99#gh-light-mode-only)
+[![My GitHub Stats](./profile/dark_stats.svg)](https://github.com/mfk99#gh-dark-mode-only)
+[![My GitHub Stats](./profile/light_stats.svg)](https://github.com/mfk99#gh-light-mode-only)
 
 ---
 
